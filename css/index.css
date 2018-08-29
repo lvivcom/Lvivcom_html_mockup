@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic,cyrillic-ext');
+
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+body {
+    margin: 0px;
+    display: grid;
+    font-size: 30px;}
+    
+h1 {
+    font-size: 70px;
+    }
+h2 {
+    font-size: 40px;
+    font-weight: normal;
+    }
+
+#promotion_bar {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    background-color: #080f00
+    }
+
+#promotion_bar_left {
+    width: auto;
+    height: 520px;
+    background-image: url(../img/head/triangle_green.jpg);
+    background-position: left;
+    filter: blur(10px);
+    margin: -10px;
+    }
+    
+#promotion_bar_right {
+    width: auto;
+    height: 520px;
+    background-image: url(../img/head/triangle_green.jpg);
+    background-position: right;
+    filter: blur(10px);
+    margin: -10px;
+    }
+    
+#promotion_bar_center {
+    z-index: 1;
+    height: 100%;
+    width: 1200px;
+    background-image: url(../img/head/triangle_green.jpg);
+    }
+
+#menu_bar {
+    display: grid;
+    height: 65px;
+    grid-template-columns: auto 1200px auto;
+    background-color: #4e5944;
+    }
+    
+#menu_left {
+    filter: blur(10px);
+    background: linear-gradient(to bottom, #7F7F7F, #505050);
+    margin: -10px;
+    }
+    
+#menu_right {
+    filter: blur(10px);
+    background: linear-gradient(to bottom, #7F7F7F, #505050);
+    margin: -10px;
+    }
+    
+#menu_sector {
+    z-index: 2;
+    background: linear-gradient(to bottom, #7F7F7F, #505050);
+    box-shadow: 5px 0px 21px rgba(0,0,0,0.62);
+    }
+
+#icons_bar {
+    display: grid;
+    height: 360px;
+    grid-template-columns: auto 1200px auto;
+    }
+
+#icons_bar_left {
+    height: 360px;
+    background-color: #6ecc00;
+    filter: blur(10px);
+    }
+#icons_bar_right {
+    height: 360px;
+    filter: blur(10px);
+    background-color: #FECB18;
+    }  
+    
+#icons_bar_center {
+    display: grid;
+    height: 360px;
+    z-index: 1;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    }  
+
+
+#icons_bar_design {
+    height: 180px;
+    width: 100%;
+    background-color: #FECB18;
+   }
+#icons_bar_t-shirt {
+    height: 180px;
+    width: 100%;
+    background-color: #455a64;
+    }
+#icons_bar_notebook {
+    height: 180px;
+    width: 100%;
+    background-color: #0277bd;
+    }
+#icons_bar_cups {
+    height: 180px;
+    width: 100%;
+    background-color: #6ecc00;
+    }
+#icons_bar_business-card {
+    height: 180px;
+    width: 100%;
+    background-color: #1a237e;
+    }
+#icons_bar_logo {
+    height: 180px;
+    width: 100%;
+    background-color: #424242;
+    }
+#icons_bar_booklets {
+    height: 180px;
+    width: 100%;
+    background-color: #f57c00;
+    }
+#icons_bar_calendars {
+    height: 180px;
+    width: 100%;
+    background-color: #450254;
+    }
+#icons_bar_menus {
+    height: 180px;
+    width: 100%;
+    background-color: #00b7c9;
+    }
+#icons_bar_banners {
+    height: 180px;
+    width: 100%;
+    background-color: #d51325;
+    }
+    
+    
+#icons_bar_center img {
+    padding-top: 20px;
+    justify-self: center;
+    width: 80px;
+    max-height: 80px;
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+    }
+    
+#icons_bar_center span {
+    justify-self: center;
+    color: #ffffff;
+    font-size: 40px;
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+    }
+    
+#icons_bar_center div{    
+    display: grid; 
+    grid-template-rows: 100px 0px 80px;
+    }
+    
+#content{
+    display: grid; 
+    grid-template-columns: auto 1200px auto;
+    }
+ 
+#content_left, #content_right{
+    background-color: #e5e5e5;
+}
+    
+#content_center{
+    padding: 20px;
+    display: grid; 
+    grid-template-columns: 300px 900px;
+    }
+    
+#logo_black {
+    padding: 50px;
+    }
+    
+#main_head{
+    padding-right: 20px;
+    margin-right: 20px;
+    
+    }
+    
+#some_textarea{
+    grid-column: 1 / span 2;
+    padding: -20px 20px 0;
+    margin: -20px 20px 0;
+    
+    }
+#action{
+    background-image: url(../img/footer/grey.jpg);
+    background-size: cover; 
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    }
+
+#action_center {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    
+    
+}
+
+#action_business_cards {
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
+#action_center img{
+    width: 280px;
+    }
+    
+#how_to_by{
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    }
+    
+#big_how_to_by{
+    font-size: 200px;
+    color: #afafaf;
+    }
