@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic,cyrillic-ext');
+
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+body {
+    margin: 0px;
+    display: grid;
+    font-size: 30px;
+    background-color: #f5f5f5;
+}
+    
+h1 {
+    font-size: 60px;
+    -webkit-margin-before:  0px;
+    -webkit-margin-after:  0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    }
+h2 {
+    font-size: 35px;
+    font-weight: normal;
+    -webkit-margin-before:  0px;
+    -webkit-margin-after:  0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    }
+
+.promotion_bar {
+    background-color: #080f00;
+    z-index: 1;
+    min-height: 400px;
+    background-image: url(../img/head/triangle_green.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sticky {
+    position: sticky;
+    background: linear-gradient(to bottom, #7F7F7F, #505050);
+    width: 100%;
+    z-index: 10;
+  } 
+
+.fixed {
+    position: fixed;
+    top: 0;
+  }  
+
+nav {
+    margin: auto;
+    z-index: 2;
+    height: 65px;
+    max-width: 1100px;
+    box-shadow: 5px 0px 21px rgba(0,0,0,0.62);
+    }
+
+.icons_bar_row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    }  
+    
+.icons_bar_center {
+    display: flex;
+    max-width: 1100px;
+    z-index: 1;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    }  
+
+
+.icons_bar {
+    height: 180px;
+    min-width: 210px;
+    max-width: 320px;
+    flex-grow: 1;
+}
+   
+.design {
+    background-color: #FECB18;
+}
+
+.t-shirt {
+    background-color: #455a64;
+}
+
+.notebook {
+    background-color: #0277bd;
+    }
+    
+.cups {
+    background-color: #6ecc00;
+}
+
+.business-card {
+    background-color: #1a237e;
+}
+
+.logo {
+    background-color: #424242;
+}
+
+.booklets {
+    background-color: #f57c00;
+}
+
+.calendars {
+    background-color: #450254;
+}
+    
+.menus {
+    background-color: #00b7c9;
+    }
+    
+.banners {
+    background-color: #d51325;
+}
+    
+    
+.icons_bar img {
+    justify-self: center;
+    padding-top: 20px;
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+    }
+    
+.icons_bar span {
+    justify-self: center;
+    color: #ffffff;
+    font-size: 40px;
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+    }
+    
+.icons_bar_center div{    
+    display: grid; 
+    grid-template-rows: 100px 0px 80px;
+    }
+    
+main {
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+}
+   .row{
+    background-color: #ffffff; 
+   
+    
+    }
+.intro_text{
+    display: flex;
+   
+    
+    }
+    
+.logo_black img{
+    display:flex;
+    width: 40%;
+    flex: 1;
+    flex-direction:column;
+    padding: 10%;
+    
+}
+    
+.title_big {
+    display:flex;
+    flex: 10;
+    flex-direction:column;
+    padding: 20px;
+    text-align: left;
+    
+   
+    
+}
+    
+.some_textarea{
+    text-align: left;
+    padding: 20px;
+    }
+
+#action{
+    background-image: url(../img/footer/grey.jpg);
+    background-size: cover; 
+    display: grid;
+    }
+
+#action_center {
+    justify-self: center;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    max-width: 1100px;
+    
+}
+
+#action_business_cards {
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
+#action_center img{
+    min-width: 100px;
+    max-width: 200px;
+    
+}
+    
+#how_to_by{
+
+        }
+    
+#big_how_to_by{
+    font-size: 200px;
+    color: #afafaf;
+    text-align: center;
+    }
+    .happy {
+        width: 35%;
+        border: 4px double black;
+    }
+    
+.how_to_by_center{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(auto-fill, 320px);
+    }
+    .zamovutu_item{
+    font-size: 25px;
+    margin: 5px;
+        
+    }
