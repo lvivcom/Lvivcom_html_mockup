@@ -1,0 +1,31 @@
+.main{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 50px 20% 5% 20% 5% 20% 5% ;
+    grid-template-rows:50px 400px 50px ;
+    /*grid-template-columns: 1fr 5fr  1fr 5fr  1fr 5fr  1fr;*/
+    /*grid-template-rows: 1fr 5fr  1fr;*/
+    
+}
+.main div{
+    border: solid 1px;
+}
+
+
+.horizont{
+    background-color: red;
+}
+
+.vertical{
+    background-color: green;
+    flex-grow:1;
+}
+
+/*display: grid;*/
+/*  height: 100%;*/
+/*  grid-template-columns: 5.5% 12fr 2.5fr 11.5fr 16fr 0fr 1fr;*/
+/*  grid-template-rows: 0.4fr 2.9fr 0.4fr;*/
+
+
+/*flex-grow:3;*/

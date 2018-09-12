@@ -5,12 +5,17 @@ var numPointsY;
 var unitWidth;
 var unitHeight;
 var points;
-
+// var svgWin = document.querySelector('.svg');
+// var divPromo = document.querySelector('.promotion');
+// svgWin.setAttribute('height',divPromo.clientHeight);
 function onLoad()
 {
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('width',window.innerWidth);
-    svg.setAttribute('height',window.innerHeight);
+    var svgWin = document.querySelector('.svg');
+    var divPromo = document.querySelector('.promotion');
+// svgWin.setAttribute('height',divPromo.clientHeight);
+    svg.setAttribute('height',divPromo.clientHeight);
     document.querySelector('#bg').appendChild(svg);
 
     var unitSize = (window.innerWidth+window.innerHeight)/20;

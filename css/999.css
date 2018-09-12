@@ -66,7 +66,7 @@ strong, b {
     position: absolute;
     left: 0px;
     right: 0px;
-    height: 550px;
+    height: auto;
     z-index: 0;
     margin: 0px;
     overflow: hidden;
@@ -152,7 +152,7 @@ strong, b {
 .menu_button{
     /*vertical-align: middle;*/
     max-width: 320px;
-    min-width: 160px;
+    min-width: 100px;
     /*margin: auto;*/
     height: 65px;
     line-height: 65px;
@@ -163,7 +163,7 @@ strong, b {
     flex-grow: 1;
 }
 .zam{
-    min-width: 220px;
+    min-width: 150px;
     text-align: center;
     color: #ffffff;
     background-color: #f57c00;
@@ -177,13 +177,18 @@ strong, b {
 }
 
 .icons_bar_container {
-    z-index: -200;
     background-image: url(../img/head/triangle_grey.jpg);
     background-size: cover; 
     background-position: center;
     background-color: #f57c00;
     z-index: -2;
-    }
+    /*overflow-x: hidden;*/
+    /*overflow-y: scroll;*/
+    /*perspective: 1px;*/
+    /*perspective-origin: 0 0;*/
+    
+    
+}
 .icons_bar_center {
     display: flex;
     max-width: 1100px;
@@ -241,6 +246,11 @@ strong, b {
 .business-card {
     background-color: #1a237e;
 }
+
+.powerbox_inv .mask {top: 0px; transition: all 0.3s ease-out 0.5s;}
+.powerbox_inv h2 {transform: translateY(0px); transition: all 0.2s ease-in-out 0.1s;}
+.powerbox_inv a.info {transform: translateX(300px); transition: all 0.2s ease-in-out 0.3s;}
+
 .logo {
     background-color: #424242;
 }
@@ -502,11 +512,12 @@ margin: auto;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
-    max-width: 345px;
-    min-width: 275px;
+    /*margin: 10px;*/
+    max-width: 366px;
+    /*margin: auto;*/
+    min-width: 200px;
     font-size: 20px;
-    /*flex-grow: 1;*/
+    flex-grow: 1;
 }
 .hov_to_by_head_area p{
     display: flex;
@@ -532,6 +543,12 @@ margin: auto;
     font-weight: bold;
     line-height: 0.8;
 }
+.nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
 
 .footer_area{
     background-color: #222;
@@ -583,4 +600,38 @@ margin: auto;
     flex-grow: 1;
     border: none;
     
+}
+
+
+.img_our_work_blocknote{
+    background-image: url(../img/source/blocknot_sat.jpg);
+    min-width: 200px;
+    /*width: 300px;*/
+    max-width: 325px;
+    background-size: cover; 
+    background-position: center;
+}
+.img_our_work_blocknote{
+    background-image: url(../img/source/booklet_lvivcom.jpg);
+    min-width: 200px;
+    /*width: 300px;*/
+    max-width: 325px;
+    background-size: cover; 
+    background-position: center;
+}
+.img_our_work_blocknote{
+    background-image: url(../img/source/blocknot_sat.jpg);
+    min-width: 200px;
+    /*width: 300px;*/
+    max-width: 325px;
+    background-size: cover; 
+    background-position: center;
+}
+.img_our_work_blocknote{
+    background-image: url(../img/source/blocknot_sat.jpg);
+    min-width: 200px;
+    /*width: 300px;*/
+    max-width: 325px;
+    background-size: cover; 
+    background-position: center;
 }
