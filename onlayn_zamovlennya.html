@@ -127,71 +127,116 @@
    
 
 <main>
+<div class="main_background">
+            <div class="main_text_block"><h1>ФОРМА ЗАМОВЛЕННЯ</h1>
 
-        <div class="hov_to_by">
-        <div class="hov_to_by_center">
-            <div class="hov_big_text">
-                <img src="./img/source/how_to_by.svg">
-            </div>
-                    
-                            
-                <div class="nowrap">
-                <div class="hov_to_by_head_area cups">
-                <div class="number">1</div><p><span>ОБЕРІТЬ<br>ЩО ВАМ<br>ПОТРІБНО</span></p>
-                <p>Щоб максимально задовільнити Ваші потреби у друкованій продукції потрібно визначитись яка саме продукція Вам потрібна. 
-                Для цього перегляньте перелік продукції яку ми виготовляємо та їх осбливості. Також можете переглянути ціну на виготовлення.
-                </p>
-                </div>
-                
-                <div class="hov_to_by_head_area booklets">
-                <div class="number">2</div><p><span>СФОРМУЙТЕ<br>ЗАМОВЛЕННЯ</span></p>
-                <p>Використовуючи онлайн форму, електронним листом чи за телефоном перелічіть потрібну вам продукцію.
-                При Замовленні не забувайте вказувати параметри: розмір, кількість, та інші параметри при потребі. Прикріпіть макет якщо такий наявний, та оплатіть замовлення.
-                </p>
-                </div>
-                
-                <div class="hov_to_by_head_area calendars">
-                <div class="number">3</div><p><span>ОТРИМАЙТЕ<br>ВАШЕ<br>ЗАМОВЛЕННЯ</span></p>
-                <p>Ви можете отримати замовлення зручним для вас способом - у відділенні "Нової пошти" чи інших перевізників, 
-                або самовивіз з нашого офісу за адресою: м. Львів, вул. Зелена, 20 (приміщення ф-ки Атлас).
-                </p>
-                </div>
+ <select name="продукція" id="продукція" onchange="change_select(this)">
+ <option value="Виберіть продукцію" disabled='disabled' selected="0">Виберіть продукцію</option>
+ <option value="Візитки">Візитки</option>
+ <option value="Флаєри">Флаєри</option>
+ <option value="Буклети">Буклети</option>
+ <option value="Плакати">Плакати</option>
+ <option value="Футболки">Футболки</option>
+</select><br>
 
-                
-                </div>
-                        <div style="display: flex; align-content: center; margin: auto; flex-wrap: wrap;">
-                            <a class="button_zamovutu" href="http://lvivcom.net">ЗАМОВИТИ ОНЛАЙН</a>
-                            <a class="button_price" href="http://lvivcom.net">ПЕРЕГЛЯНУТИ ПРАЙС</a>
-                        </div>
-        </div></div>
-    <!--Як зробити замовлення-->
+<select name="Тип друку" id="Тип друку" onchange="change_select(this)" style="display:none">
+<option value="Тип друку" disabled='disabled' selected="0">Тип друку</option>
+<option value=Цифровий>Цифровий</option>
+<option value=Офсетний>Офсетний</option>
+<option value=Шовкодрук>Шовкодрук</option>
+<option value=З тисненням>З тисненням</option>
+</select>
+ 
+<select name="Оберіть кількість" id="Оберіть кількість" onchange="change_select(this)" style="display:none">
+<option value="Оберіть кількість" disabled='disabled' selected="0">Оберіть кількість</option>
+<option value="100 шт.">100 шт.</option>
+<option value="1000 шт.">1000 шт.</option>
+<option value="2500 шт.">2500 шт.</option>
+<option value="5000 шт.">5000 шт.</option>
+</select>
+
+
+
+<select name="Оберіть покриття" id="Оберіть покриття" onchange="change_select(this)" style="display:none">
+<option value="Оберіть покриття" disabled='disabled' selected="0">Оберіть покриття</option>
+<option value="Без ламінації">Без ламінації</option>
+<option value="Одностороння глянцева">Одностороння глянцева</option>
+<option value="Двостороння глянцева">Двостороння глянцева</option>
+<option value="Одностороння матова">Одностороння матова</option>
+<option value="Двостороння матова">Двостороння матова</option>
+</select>
+
+<!--<select name="розмір флаєра" id="розмір флаєра" onchange="change_select(this)" style="display:none; position: absolute;">-->
+<!--<option value=210х100 мм.>210х100 мм.</option>-->
+<!--<option value=А6>А6</option>-->
+<!--<option value=А5>А5</option>-->
+<!--<option value=А4>А4</option>-->
+<!--</select><br>-->
+ 
+<!--<select name="розмір" id="розмір флаєра" onchange="change_select(this)" style="display:none; position: absolute;">-->
+<!--<option value=31>secet31</option>-->
+<!--<option value=32>secet32</option>-->
+<!--<option value=33>secet33</option>-->
+<!--<option value=34>secet34</option>-->
+<!--</select><br>-->
+ 
+<!--<select name="select4" id="select4" onchange="change_select(this)" style="display:none; position: absolute;">-->
+<!--<option value=41>secet41</option>-->
+<!--<option value=42>secet42</option>-->
+<!--<option value=43>secet43</option>-->
+<!--<option value=44>secet44</option>-->
+<!--</select><br>-->
+<br>
+<div id='zamovlennya' style="display:none">Ваше замовлення: 100 цифрових візиток із двосторонньою ламінацією - Вартість 375 грн. <br><button type="submit">ЗАМОВИТИ</button></div>
+
+    <script type="text/javascript">
+function change_select(elem) {
+   switch (elem.value) {
+        case 'Візитки':
+        document.getElementById('Тип друку').style.display = 'inline';
+        break;
+          
+        case 'Цифровий':
+        document.getElementById('Оберіть кількість').style.display = 'inline';
+        break;
+            
+        case '100 шт.':
+        document.getElementById('Оберіть покриття').style.display = 'inline';
+        break;
+           
+        case 'Двостороння матова':
+        document.getElementById('zamovlennya').style.display = 'inline';
+        break;
     
-    <div class="main_background">
-            <div class="main_text_block">
-                <div class="intro_h1">
-                    <h1>Друк у Львові</h1>
-                    <h2>буклети, флаєри, візитки, плакати, каталоги, календарі, горнятка, ручки, блокноти, шоденники датовані та недатовані,  поліетиленові пакети, футболки, вивіски, баннери</h2>
-                </div>  
-                    
-                <div class="some_textarea">
-                    <img class="img_oval" src="./img/source/offset_printing.jpg">
-                        <p>«Львівком» - сучасне рекламно-поліграфічне підприємство повного циклу у м. Львів, 
-                        до складу якого входять друкарня, відділ дизайну, веб-студія та рекламний відділ. Основна спеціалізація підприємства - це друк у Львові 
-                        та виготовлення рекламної продукції, поліграфічної продукції, створення сайтів, друк сувенірної продукції, надання послуг дизайну. 
-                        Друк та рекламні послуги, що пропонуються нами - це гарантія високої якості, оперативність роботи та індивідуальна увага до кожного замовлення.</p>
-                </div> 
-                <div class="some_textarea">
-                    <p>Друкарня Львівком виготовляє повний спектр поліграфічної продукції: друк візиток і бланків, фірмових папок, рекламної поліграфії, друк буклетів, брошур, каталогів, листівок,
-                        наклейок, календарів, конвертів, плакатів, сувенірів, флаєрів для різних рекламних акцій, маркетингових заходів, бізнес-поліграфію та багато іншого. 
-                        Якщо Вам потрібно надрукувати якісну поліграфічну продукцію у м. Львів, звертайтесь до нас.
-                        <br><br>Особливу популярність в останній час у м. Львів здобула оеративна поліграфія (цифровий друк на повноколірному лазерному принтері А3 формату із можливістю друку на матовому, 
-                        глянцевому та дизайнерському папері густиною від 60 до 350 г.м.кв.). Цей різновид друку характеризується унікальною швидкістю виконання замовлення до 24 год., 
-                        можливістю друку малих тиражів від одного екземпляру.</p>
-                        <img class="img_oval" src="./img/source/pantone.jpg">
-                </div>
-            </div>
-        </div>
-    <!--Текстовии блок-->
+        // case 'Буклети':
+        //   document.getElementById('тираж').style.display = 'inline'
+        //   document.getElementById('select3').style.display= 'none';
+        //   document.getElementById('select4').style.display = 'none';
+        //   document.getElementById('select5').style.display = 'none';
+            
+        //   break;
+        
+    //   default:
+    //       document.getElementById('тираж').style.display = 'none';
+    //       document.getElementById('розмір').style.display = 'none';
+    //       document.getElementById('розмір флаєра').style.display= 'none';
+   }
+}
+// for ('Оберіть покриття'  = "Двостороння матова"){
+// var zam = ['продукція' + 'Тип друку' + 'Оберіть кількість' +'Оберіть покриття'];
+// document.getElementById('zamovlennya').innerHTML = zam;}
+    
+    </script>
+    
+    
+    
+    
+  </div>  
+    
+    </div> 
+    
+    
+    
 
             
     <div class="parallax-container">
